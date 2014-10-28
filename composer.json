@@ -1,0 +1,22 @@
+{
+    "name": "nathanmac/datetime-codeception-module",
+    "description": "Testing helpers for date/time comparisons in your Codeception acceptance tests.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nathan Macnamara",
+            "email": "nathan.macnamara@outlook.com"
+        }
+    ],
+    "require": {
+        "nesbot/Carbon": "*"
+    },
+    "require-dev": {
+        "codeception/codeception": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codeception\\": "src"
+        }
+    }
+}

@@ -10,5 +10,9 @@ matrix:
   allow_failures:
     - php: hhvm
 
+before_script:
+  - composer self-update
+  - composer install --prefer-source --no-interaction --dev
+
 script:
-  - php codecept run  # tests
+  - php vendor/bin/codecept run  # tests

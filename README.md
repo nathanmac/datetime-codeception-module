@@ -1,6 +1,8 @@
 Codeception Date/Time Helpers Module
 ====================================
 
+[![Build Status](https://travis-ci.org/nathanmac/datetime-codeception-module.svg?branch=master)](https://travis-ci.org/nathanmac/datetime-codeception-module)
+
 Testing helpers for date/time comparisons in your Codeception acceptance tests.
 
 ## Installation

@@ -1,5 +1,5 @@
 <?php 
-$I = new AcceptanceTester($scenario);
+$I = new DatetimeTester($scenario);
 $I->wantTo('Test the date comparison module');
 
 $d1 = date('r');                            // Today

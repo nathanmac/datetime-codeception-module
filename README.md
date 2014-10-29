@@ -29,6 +29,8 @@ Then enable it in your suite configuration with the following settings
        enabled: [Date, Time]
              
 ## Actions
+* [Date Module](#date-module)
+* [Time Module](#time-module)
 
 ### Date Module
 
@@ -280,7 +282,59 @@ See the month in the year is not a given value.
 
 ### Time Module
 
-TBA
+##### seeTimeIsInSecs( string $time, integer $seconds )
+See time is in a given number of seconds.
+
+##### dontSeeTimeIsInSecs( string $time, integer $seconds )
+See time is not in a given number of seconds.
+
+##### seeTimeWasInSecs( string $time, integer $seconds )
+See time was in a given number of seconds.
+
+##### dontSeeTimeWasInSecs( string $time, integer $seconds )
+See time was not in a given number of seconds.
+
+##### seeTimeIsInMins( string $time, integer $minutes )
+See time is in a given number of minutes.
+
+##### dontSeeTimeIsInMins( string $time, integer $minutes )
+See time is not in a given number of minutes.
+
+##### seeTimeWasInMins( string $time, integer $minutes )
+See time was in a given number of minutes.
+
+##### dontSeeTimeWasInMins( string $time, integer $minutes )
+See time was not in a given number of minutes.
+
+##### seeTimeIsInHours( string $time, integer $hours )
+See time is in a given number of hours.
+
+##### dontSeeTimeIsInHours( string $time, integer $hours )
+See time is not in a given number of hours.
+
+##### seeTimeWasInHours( string $time, integer $hours )
+See time was in a given number of hours.
+
+##### dontSeeTimeWasInHours( string $time, integer $hours )
+See time was not in a given number of hours.
+
+##### seeTimeInFuture( string $time )
+See the time is in the future.
+
+##### dontSeeTimeInFuture( string $time )
+See the time is not in the future.
+
+##### seeTimeInPast( string $time )
+See the time is in the past.
+
+##### dontSeeTimeInPast( string $time )
+See the time is not in the past.
+
+##### seeTimeMatches( string $t1, string $t2 )
+See that two times match.
+
+##### dontSeeTimeMatches( string $t1, string $t2 )
+See that two times don't match.
 
 # License
 

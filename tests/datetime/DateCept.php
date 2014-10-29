@@ -106,3 +106,21 @@ $I->dontSeeDateInQuarter(date('r', mktime(12, 0, 0, 9, 1, 2014)), 1);   // Sept 
 
 $I->seeDateIsLeapYear(date('r', mktime(12, 0, 0, 1, 1, 2000)));         // 1st Jan 2000
 $I->dontSeeDateIsLeapYear(date('r', mktime(12, 0, 0, 1, 1, 2003)));     // 1st Jan 2003
+
+
+
+$I->seeDayInWeek(date('r', mktime(12, 0, 0, 12, 3, 2014)), 3);          // Wednesday 3rd Dec 2014
+$I->dontSeeDayInWeek(date('r', mktime(12, 0, 0, 12, 3, 2014)), 1);      // Wednesday 3rd Dec 2014
+$I->seeDayInMonth(date('r', mktime(12, 0, 0, 12, 22, 2014)), 22);       // 22nd of Dec
+$I->dontSeeDayInMonth(date('r', mktime(12, 0, 0, 12, 22, 2014)), 16);   // 22nd of Dec
+$I->seeDayInYear(date('r', mktime(12, 0, 0, 1, 101, 2014)), 100);       // 100 days in to 2014
+$I->dontSeeDayInYear(date('r', mktime(12, 0, 0, 1, 101, 2014)), 50);    // 100 days in to 2014
+
+$I->seeWeekInMonth(date('r', mktime(12, 0, 0, 12, 3, 2014)), 1);        // Wednesday 3rd Dec 2014
+$I->dontSeeWeekInMonth(date('r', mktime(12, 0, 0, 12, 3, 2014)), 3);    // Wednesday 3rd Dec 2014
+
+$I->seeWeekInYear(date('r', mktime(12, 0, 0, 12, 3, 2014)), 49);        // Wednesday 3rd Dec 2014
+$I->dontSeeWeekInYear(date('r', mktime(12, 0, 0, 12, 3, 2014)), 10);    // Wednesday 3rd Dec 2014
+
+$I->seeMonthInYear(date('r', mktime(12, 0, 0, 5, 1, date('Y'))), 5);        // May
+$I->dontSeeMonthInYear(date('r', mktime(12, 0, 0, 5, 1, date('Y'))), 6);    // May

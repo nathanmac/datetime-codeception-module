@@ -242,6 +242,42 @@ See the date is a leap year.
 ##### dontSeeDateIsLeapYear( string $date )
 See the date is not a leap year.
 
+##### seeDayInWeek( string $date, integer $day )
+See the date is a given day in the week.
+
+##### dontSeeDayInWeek( string $date, integer $day )
+See the date is not a given day in the week.
+
+##### seeDayInMonth( string $date, integer $day )
+See the date is a given day in the month.
+
+##### dontSeeDayInMonth( string $date, integer $day )
+See the date is not a given day in the month.
+
+##### seeDayInYear( string $date, integer $day )
+See the date is a given day in the year.
+
+##### dontSeeDayInYear( string $date, integer $day )
+See the date is not a given day in the year.
+
+##### seeWeekInMonth( string $date, integer $week )
+See the date is a not given week in the month.
+
+##### dontSeeWeekInMonth( string $date, integer $week )
+See the date is a not given week in the month.
+
+##### seeWeekInYear( string $date, integer $week )
+See the date is a given week in the year.
+
+##### dontSeeWeekInYear( string $date, integer $week )
+See the date is not a given week in the year.
+
+##### seeMonthInYear( string $date, integer $month )
+See the month in the year is a given value.
+
+##### dontSeeMonthInYear( string $date, integer $month )
+See the month in the year is not a given value.
+
 ### Time Module
 
 TBA

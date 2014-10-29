@@ -675,6 +675,133 @@ class Date extends Module
         \PHPUnit_Framework_Assert::assertFalse($this->_ParseDate($date)->isLeapYear());
     }
 
+    /* ----------------- Day In ----------------- */
+
+    /**
+     * See the date is a given day in the week.
+     *
+     * @param string $date
+     * @param int    $day
+     */
+    public function seeDayInWeek($date, $day) {
+        \PHPUnit_Framework_Assert::assertEquals($day, $this->_ParseDate($date)->dayOfWeek);
+    }
+
+    /**
+     * See the date is not a given day in the week.
+     *
+     * @param string $date
+     * @param int    $day
+     */
+    public function dontSeeDayInWeek($date, $day) {
+        \PHPUnit_Framework_Assert::assertNotEquals($day, $this->_ParseDate($date)->dayOfWeek);
+    }
+
+    /**
+     * See the date is a given day in the month.
+     *
+     * @param string $date
+     * @param int    $day
+     */
+    public function seeDayInMonth($date, $day) {
+        \PHPUnit_Framework_Assert::assertEquals($day, $this->_ParseDate($date)->day);
+    }
+
+    /**
+     * See the date is not a given day in the month.
+     *
+     * @param string $date
+     * @param int    $day
+     */
+    public function dontSeeDayInMonth($date, $day) {
+        \PHPUnit_Framework_Assert::assertNotEquals($day, $this->_ParseDate($date)->day);
+    }
+
+    /**
+     * See the date is a given day in the year.
+     *
+     * @param string $date
+     * @param int    $day
+     */
+    public function seeDayInYear($date, $day) {
+        \PHPUnit_Framework_Assert::assertEquals($day, $this->_ParseDate($date)->dayOfYear);
+    }
+
+    /**
+     * See the date is not a given day in the year.
+     *
+     * @param string $date
+     * @param int    $day
+     */
+    public function dontSeeDayInYear($date, $day) {
+        \PHPUnit_Framework_Assert::assertNotEquals($day, $this->_ParseDate($date)->dayOfYear);
+    }
+
+    /* ----------------- Week In ----------------- */
+
+    /**
+     * See the date is a not given week in the month.
+     *
+     * @param string $date
+     * @param int    $week
+     */
+    public function seeWeekInMonth($date, $week) {
+        \PHPUnit_Framework_Assert::assertEquals($week, $this->_ParseDate($date)->weekOfMonth);
+    }
+
+    /**
+     * See the date is a not given week in the month.
+     *
+     * @param string $date
+     * @param int    $week
+     */
+    public function dontSeeWeekInMonth($date, $week) {
+        \PHPUnit_Framework_Assert::assertNotEquals($week, $this->_ParseDate($date)->weekOfMonth);
+    }
+
+    /**
+     * See the date is a given week in the year.
+     *
+     * @param string $date
+     * @param int    $week
+     */
+    public function seeWeekInYear($date, $week) {
+        \PHPUnit_Framework_Assert::assertEquals($week, $this->_ParseDate($date)->weekOfYear);
+    }
+
+    /**
+     * See the date is not a given week in the year.
+     *
+     * @param string $date
+     * @param int    $week
+     */
+    public function dontSeeWeekInYear($date, $week) {
+        \PHPUnit_Framework_Assert::assertNotEquals($week, $this->_ParseDate($date)->weekOfYear);
+    }
+
+    /* ----------------- Month In ----------------- */
+
+    /**
+     * See the month in the year is a given value.
+     *
+     * @param string $date
+     * @param int    $month
+     */
+    public function seeMonthInYear($date, $month) {
+        \PHPUnit_Framework_Assert::assertEquals($month, $this->_ParseDate($date)->month);
+    }
+
+    /**
+     * See the month in the year is not a given value.
+     *
+     * @param string $date
+     * @param int    $month
+     */
+    public function dontSeeMonthInYear($date, $month)
+    {
+        \PHPUnit_Framework_Assert::assertNotEquals($month, $this->_ParseDate($date)->month);
+    }
+
     /* ----------------- System Helpers ----------------- */
 
     /**
